@@ -35,10 +35,6 @@ public class MainActivity extends AppCompatActivity {
         setupRecyclerView();
     }
 
-
-    
-    
-
     void setupRecyclerView(){
         Query query  = Utility.getCollectionReferenceForNotes().orderBy("timestamp",Query.Direction.DESCENDING);
         FirestoreRecyclerOptions<Note> options = new FirestoreRecyclerOptions.Builder<Note>()
